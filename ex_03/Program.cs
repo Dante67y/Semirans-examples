@@ -1,11 +1,9 @@
-﻿int a, b, x, y;
+﻿int a, b;
 a = Convert.ToInt32(Console.ReadLine());
 b = Convert.ToInt32(Console.ReadLine());
-y = Convert.ToInt32(a / b);
-x = Convert.ToInt32(a - b * (a / b));
-if (b * y == a) Console.WriteLine("кратно");
+if (a%b == 0) Console.WriteLine("кратно");
 else
 {
     Console.Write("некратно, остаток ");
-    Console.WriteLine(x);
+    Console.WriteLine(a%b);
 }
